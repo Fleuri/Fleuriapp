@@ -16,9 +16,9 @@
 <p> {{ userNameInfo }} </p>
 <button class="btn btn-primary" (click)="onDetailButtonClick()">Display details</button>
 <p *ngIf="showDetails">Here be details.</p>
-<ul>
+<ol>
   <p>Button was clicked at these times</p>
   <li *ngFor="let timestamp of timeStamps; let i=index" [ngStyle]="{backgroundColor: getFifthColour(i)}"
   [ngClass]="{fifth_timestamp: i >=4}"> {{ timestamp }} </li>
-</ul>
+</ol>
 
